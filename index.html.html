@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deon's Calc</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <h2>DEON'S CALC</h2>
+
+    <p class="js-output text">0</p>
+
+    <p class="js-Answer text">0</p>
+
+    <!--7-->
+    <div>
+      <p>
+        <button
+          onclick="
+updateCalc('7')
+"
+        >
+          7
+        </button>
+
+        <!--8-->
+        <button
+          onclick="
+updateCalc('8')
+
+"
+        >
+          8
+        </button>
+
+        <!--9-->
+        <button
+          onclick="
+updateCalc('9')
+"
+        >
+          9
+        </button>
+
+        <button
+          onclick="
+updateCalc(' + ');
+"
+        >
+          +
+        </button>
+      </p>
+
+      <p>
+        <button
+          onclick="
+updateCalc('4')
+"
+        >
+          4
+        </button>
+
+        <button
+          onclick="
+updateCalc('5') 
+"
+        >
+          5
+        </button>
+
+        <button
+          onclick="
+updateCalc('6');
+"
+        >
+          6
+        </button>
+
+        <button
+          onclick="
+updateCalc(' * ')
+"
+        >
+          x
+        </button>
+      </p>
+
+      <p>
+        <button
+          onclick="
+updateCalc('1')
+"
+        >
+          1
+        </button>
+
+        <button
+          onclick="
+updateCalc('2')
+"
+        >
+          2
+        </button>
+
+        <button
+          onclick="
+updateCalc('3')
+"
+        >
+          3
+        </button>
+
+        <button
+          onclick="
+updateCalc(' - ')
+"
+        >
+          -
+        </button>
+      </p>
+
+      <p>
+        <button
+          onclick="
+updateCalc('0')
+"
+        >
+          0
+        </button>
+
+        <button
+          onclick="
+
+
+Calculation = eval(Calculation);
+document.querySelector('.js-Answer').innerHTML = Calculation;
+
+"
+          onkeydown="handleAnswerbtn(event)"
+        >
+          =
+        </button>
+
+        <button
+          onclick="
+
+updateCalc(' / ')"
+        >
+          /
+        </button>
+
+        <button
+          onclick="
+
+Calculation = '';
+document.querySelector('.js-output').innerHTML = Calculation;
+document.querySelector('.js-output').innerHTML = '0';
+
+"
+        >
+          Clear
+        </button>
+      </p>
+    </div>
+
+    <script src="calc.js"></script>
+  </body>
+</html>
